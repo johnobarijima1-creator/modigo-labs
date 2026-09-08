@@ -1,7 +1,6 @@
-def total_word_count(sentences):
-    count = 0
-    for sentence in sentences:
-        count += len(sentence.split())
-    return count
-
-print(total_word_count(["hello world", "how are you"]))
+def total_scores(rounds):
+    totals = {}
+    for round_scores in rounds:
+        for player, points in round_scores.items():
+            totals[player] = totals.get(player, 0) + points            
+    return totals
