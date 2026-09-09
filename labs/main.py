@@ -1,5 +1,4 @@
-def count_unique_visitors(visitors):
-    unique_visitors = set(visitors)
-    return len(unique_visitors)
+def count_unique_coordinates(coordinates):
+    return len(set(coordinates))
 
-print(count_unique_visitors(["ada", "bola", "ada"]))
+print(count_unique_coordinates([(0,0), (1,1), (0,0)]))
