@@ -1,2 +1,2 @@
-def swap_tuple(pair):
-    return(pair[1], pair[0])
+def same_point(point1, point2):
+    return point1 == point2
