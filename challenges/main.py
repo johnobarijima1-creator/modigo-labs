@@ -1,3 +1,3 @@
-def merge_tags(tags1, tags2):
-    merged = tags1.union(tags2)
-    return merged
+def dedupe_preserve_order(items):
+    return list(dict.fromkeys(items))
+print(dedupe_preserve_order([3, 1, 3, 2, 1]))
