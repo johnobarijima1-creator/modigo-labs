@@ -1,4 +1,4 @@
-def count_unique_coordinates(coordinates):
-    return len(set(coordinates))
+def apply_discount(price, discount_percent=10):
+    return round(price - (price * discount_percent / 100), 2)
 
-print(count_unique_coordinates([(0,0), (1,1), (0,0)]))
+print(apply_discount(100))
