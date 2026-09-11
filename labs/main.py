@@ -1,4 +1,3 @@
-def power_of(base, exponent=2):
-    return base ** exponent
-    
-print(power_of(5))
+def format_line_item(description, amount, tax_rate=7.5, currency="$"):
+    total = round(amount + (amount * tax_rate / 100), 2)
+    return f"{description}: {currency}{total}"
