@@ -1,2 +1,12 @@
-def create_greeting(recipient_name, sender_name="A Friend", closing="Best wishes"):
-    return f"Dear {recipient_name}, {closing}! From, {sender_name}."
+def has_all_vowels(word):
+    required = {"a", "e", "i", "o", "u"}
+    word = word.lower()
+    for vowel in "aeiou":
+        if vowel not in word:
+            return False
+    
+    else:
+        return True
+
+
+print(has_all_vowels("education"))
