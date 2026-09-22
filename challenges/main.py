@@ -1,12 +1,11 @@
-def has_all_vowels(word):
-    required = {"a", "e", "i", "o", "u"}
-    word = word.lower()
-    for vowel in "aeiou":
-        if vowel not in word:
-            return False
-    
-    else:
-        return True
+def compare_hobbies(person1_hobbies, person2_hobbies):
+    hobbies1 = set(person1_hobbies)
+    hobbies2 = set(person2_hobbies)
+    return {
+        "shared": person1_hobbies & person2_hobbies,
+        "only_person1": person1_hobbies - person2_hobbies,
+        "only_person2": person2_hobbies - person1_hobbies,
+    }
 
 
-print(has_all_vowels("education"))
+print(compare_hobbies({"reading", "coding"}, {"coding", "gaming"}))
