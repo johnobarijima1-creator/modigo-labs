@@ -1,10 +1,4 @@
-def is_prime(number):
-    if number <= 1:
-        return False
+def pair_names_and_ages(names, ages):
+    return dict(zip(names, ages))
 
-    for num in range(2, number):
-        if number % num == 0:
-            return False
-    return True            
-
-print(is_prime(10))
+print(pair_names_and_ages(["Ada", "Bola"], [25, 30]))
